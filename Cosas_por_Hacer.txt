@@ -1,0 +1,6 @@
+Lista de cosas por hacer:
+
+En la barra de navegación vamos a agregar un apartado de horarios
+Ensalazar el dominio
+Completar la sección de historia de la escuela
+Investigar e implementar una especie de widget con la pagina de instagram de la escuela

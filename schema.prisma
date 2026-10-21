@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Para pasar a PostgreSQL: cambiar provider a "postgresql" y DATABASE_URL en .env
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Noticia {
+  id            Int       @id @default(autoincrement())
+  slug          String    @unique
+  titulo        String
+  categoria     String    @default("")
+  autor         String    @default("")
+  resumen       String    @default("")
+  contenido     String    @default("")
+  portada       String?
+  publicada     Boolean   @default(false)
+  publicadaEn   DateTime?
+  creadaEn      DateTime  @default(now())
+  actualizadaEn DateTime  @updatedAt
+
+  @@index([publicada, publicadaEn])
+}

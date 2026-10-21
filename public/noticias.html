@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Noticias y Avisos | EETP 451</title>
+
+    <link
+        rel="stylesheet"
+        href="noticias.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BARRA SUPERIOR
+    ====================================================== -->
+
+    <div class="top-bar">
+
+        <div class="top-container">
+
+            <div class="school-name">
+                ESCUELA DE EDUCACIÓN TÉCNICA PROFESIONAL
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+
+            <!-- IDENTIDAD -->
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <img
+                    src="logoeetp.jpeg"
+                    alt="EETP 451"
+                    class="logo"
+                >
+
+                <div class="brand-text">
+
+                    <strong>ESCUELA</strong>
+                    <strong>EDUCACIÓN</strong>
+                    <strong>TÉCNICA</strong>
+                    <strong>PROFESIONAL</strong>
+
+                    <span>
+                        ESCUELA TÉCNICA DE NIVEL SECUNDARIO
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <!-- MENU -->
+
+            <nav class="main-menu">
+
+                <a href="la-escuela.html">
+                    LA ESCUELA
+                </a>
+
+                <a href="especializaciones.html">
+                    ESPECIALIZACIONES
+                </a>
+
+                <a href="#">
+                    PROYECTOS
+                </a>
+
+                <a
+                    href="noticias.html"
+                    class="active"
+                >
+                    NOTICIAS
+                </a>
+
+                <a
+                    href="#"
+                    class="inscripciones"
+                >
+                    INSCRIPCIONES
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CABECERA DE LA SECCIÓN
+    ====================================================== -->
+
+    <section class="page-title">
+
+        <div class="content">
+
+            <span class="title-small">
+                INFORMACIÓN INSTITUCIONAL
+            </span>
+
+            <h1>
+                Noticias y avisos
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Información, novedades y comunicados
+                de la comunidad educativa.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CONTENIDO PRINCIPAL
+    ====================================================== -->
+
+    <main class="news-page">
+
+        <div class="content news-layout">
+
+
+            <!-- =================================================
+                 COLUMNA PRINCIPAL
+            ================================================== -->
+
+            <section class="news-main">
+
+
+                <!-- NOTICIA DESTACADA -->
+
+                <article class="featured-news" id="featured" style="display:none">
+
+                    <div class="featured-image">
+
+                        <div class="image-placeholder">
+                            NOTICIA DESTACADA
+                        </div>
+
+                    </div>
+
+
+                    <div class="featured-content">
+
+                        <div class="news-meta">
+
+                            <span class="category category-news">
+                                NOTICIA
+                            </span>
+
+                            <span class="date">
+                                07 OCT 2026
+                            </span>
+
+                        </div>
+
+
+                        <h2>
+                            Comienzan nuevas actividades
+                            en nuestra institución
+                        </h2>
+
+
+                        <p>
+                            Toda la información sobre las
+                            próximas actividades, proyectos
+                            y novedades de la Escuela de
+                            Educación Técnica Profesional.
+                        </p>
+
+
+                        <a
+                            href="#"
+                            class="read-more"
+                        >
+                            LEER NOTICIA
+                            <span>→</span>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+
+                <!-- TITULO -->
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            ACTUALIDAD
+                        </span>
+
+                        <h2>
+                            Últimas noticias
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     GRID DE NOTICIAS
+                ================================================== -->
+
+                <div class="news-grid" id="news-grid">
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 SIDEBAR
+            ================================================== -->
+
+            <aside class="sidebar">
+
+
+                <!-- BUSCADOR -->
+
+                <div class="sidebar-box search-box">
+
+                    <h3>
+                        Buscar
+                    </h3>
+
+                    <form action="noticias.html" method="get">
+
+                        <input
+                            type="text"
+                            name="q"
+                            placeholder="Buscar noticias..."
+                        >
+
+                        <button type="submit">
+                            BUSCAR
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+
+                <!-- CATEGORÍAS -->
+
+                <div class="sidebar-box">
+
+                    <h3>
+                        Categorías
+                    </h3>
+
+                    <ul class="categories">
+
+                        <li>
+                            <a href="noticias.html?categoria=noticia" data-categoria="noticia">
+                                <span>
+                                    Noticias
+                                </span>
+
+                                <strong>
+                                    12
+                                </strong>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="noticias.html?categoria=aviso" data-categoria="aviso">
+                                <span>
+                                    Avisos
+                                </span>
+
+                                <strong>
+                                    8
+                                </strong>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="noticias.html?categoria=proyecto" data-categoria="proyecto">
+                                <span>
+                                    Proyectos
+                                </span>
+
+                                <strong>
+                                    6
+                                </strong>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="noticias.html?categoria=institucional" data-categoria="institucional">
+                                <span>
+                                    Institucional
+                                </span>
+
+                                <strong>
+                                    5
+                                </strong>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="noticias.html?categoria=evento" data-categoria="evento">
+                                <span>
+                                    Eventos
+                                </span>
+
+                                <strong>
+                                    4
+                                </strong>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- AVISO DESTACADO -->
+
+                <div class="sidebar-highlight">
+
+                    <span class="highlight-label">
+                        AVISO IMPORTANTE
+                    </span>
+
+                    <h3>
+                        Información para
+                        la comunidad educativa
+                    </h3>
+
+                    <p>
+                        Consultá periódicamente esta sección
+                        para mantenerte informado sobre las
+                        novedades de la institución.
+                    </p>
+
+                    <a href="noticias.html?categoria=aviso">
+                        VER AVISOS →
+                    </a>
+
+                </div>
+
+
+
+                <!-- ARCHIVO -->
+
+                <div class="sidebar-box">
+
+                    <h3>
+                        Archivo
+                    </h3>
+
+                    <ul class="archive" id="archive"></ul>
+
+                </div>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <strong>
+                    ESCUELA DE EDUCACIÓN
+                    TÉCNICA PROFESIONAL
+                </strong>
+
+                <span>
+                    EETP N.º 451
+                </span>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    CONTACTO
+                </h4>
+
+                <p>
+                    Avellaneda, Santa Fe
+                </p>
+
+                <p>
+                    Escuela Técnica de Nivel Secundario
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    ENLACES
+                </h4>
+
+                <a href="#">
+                    Webmail
+                </a>
+
+                <a href="#">
+                    Moodle
+                </a>
+
+                <a href="#">
+                    Autogestión
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 EETP N.º 451
+            </span>
+
+            <span>
+                Escuela de Educación Técnica Profesional
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="noticias-comun.js"></script>
+    <script src="noticias.js"></script>
+
+</body>
+
+</html>

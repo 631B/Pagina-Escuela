@@ -1,0 +1,232 @@
+/* =========================================================
+   EETP 451
+   PÁGINA DE UNA NOTICIA
+   (se usa junto con noticias.css)
+========================================================= */
+
+.page-title h1.article-title {
+
+    max-width: 900px;
+
+    font-size: clamp(30px, 4.5vw, 46px);
+
+}
+
+
+.article-page {
+
+    padding: 60px 0 100px;
+
+    background: var(--gray-background);
+
+}
+
+
+.article-container {
+
+    width: 90%;
+
+    max-width: 860px;
+
+    margin: 0 auto;
+
+}
+
+
+.back-link {
+
+    display: inline-block;
+
+    margin-bottom: 25px;
+
+    color: var(--blue);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 0.7px;
+
+}
+
+
+.back-link:hover {
+
+    color: var(--blue-dark);
+
+}
+
+
+.article-error {
+
+    padding: 25px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+}
+
+
+.article {
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+}
+
+
+.article-cover {
+
+    width: 100%;
+
+    max-height: 460px;
+
+    object-fit: cover;
+
+}
+
+
+.article-body {
+
+    padding: 45px;
+
+}
+
+
+.article-lead {
+
+    margin-bottom: 35px;
+
+    padding-left: 20px;
+
+    border-left: 3px solid var(--blue);
+
+    color: var(--blue-dark);
+
+    font-size: 18px;
+
+    font-weight: 300;
+
+    line-height: 1.7;
+
+}
+
+
+.article-content {
+
+    color: #444444;
+
+    font-size: 15px;
+
+    line-height: 1.85;
+
+    overflow-wrap: break-word;
+
+}
+
+
+.article-content p,
+.article-content ul,
+.article-content ol,
+.article-content blockquote {
+
+    margin-bottom: 20px;
+
+}
+
+
+.article-content h2 {
+
+    margin: 35px 0 15px;
+
+    color: var(--blue-dark);
+
+    font-size: 26px;
+
+    line-height: 1.25;
+
+}
+
+
+.article-content h3 {
+
+    margin: 28px 0 12px;
+
+    color: var(--blue-dark);
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+}
+
+
+.article-content ul,
+.article-content ol {
+
+    padding-left: 28px;
+
+}
+
+
+.article-content a {
+
+    color: var(--blue);
+
+    text-decoration: underline;
+
+}
+
+
+.article-content a:hover {
+
+    color: var(--blue-dark);
+
+}
+
+
+.article-content img {
+
+    display: block;
+
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 25px auto;
+
+}
+
+
+.article-content blockquote {
+
+    padding-left: 20px;
+
+    border-left: 3px solid var(--blue-light);
+
+    color: var(--gray);
+
+}
+
+
+@media (max-width: 750px) {
+
+    .article-body {
+
+        padding: 28px 24px;
+
+    }
+
+    .article-lead {
+
+        font-size: 16px;
+
+    }
+
+}

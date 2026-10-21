@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Crear noticia | EETP 451</title>
+
+    <link
+        rel="stylesheet"
+        href="crear-noticia.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         BARRA SUPERIOR
+    ====================================================== -->
+
+    <div class="top-bar">
+
+        <div class="top-container">
+
+            <div class="school-name">
+                ESCUELA DE EDUCACIÓN TÉCNICA PROFESIONAL
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="header">
+
+        <div class="header-container">
+
+
+            <a
+                href="index.html"
+                class="brand"
+            >
+
+                <img
+                    src="logoeetp.jpeg"
+                    alt="EETP 451"
+                    class="logo"
+                >
+
+                <div class="brand-text">
+
+                    <strong>ESCUELA</strong>
+                    <strong>EDUCACIÓN</strong>
+                    <strong>TÉCNICA</strong>
+                    <strong>PROFESIONAL</strong>
+
+                    <span>
+                        ESCUELA TÉCNICA DE NIVEL SECUNDARIO
+                    </span>
+
+                </div>
+
+            </a>
+
+
+
+            <nav class="main-menu">
+
+                <a href="la-escuela.html">
+                    LA ESCUELA
+                </a>
+
+                <a href="especializaciones.html">
+                    ESPECIALIZACIONES
+                </a>
+
+                <a href="#">
+                    PROYECTOS
+                </a>
+
+                <a
+                    href="noticias.html"
+                    class="active"
+                >
+                    NOTICIAS
+                </a>
+
+                <a
+                    href="#"
+                    class="inscripciones"
+                >
+                    INSCRIPCIONES
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         CABECERA
+    ====================================================== -->
+
+    <section class="page-title">
+
+        <div class="content">
+
+            <span class="title-small">
+                PANEL DE PUBLICACIÓN
+            </span>
+
+            <h1>
+                Crear noticia
+            </h1>
+
+            <div class="title-line"></div>
+
+            <p>
+                Compartí información, novedades y actividades
+                con la comunidad educativa.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         EDITOR
+    ====================================================== -->
+
+    <main class="editor-page">
+
+        <div class="editor-container">
+
+
+            <!-- =================================================
+                 EDITOR PRINCIPAL
+            ================================================== -->
+
+            <section class="editor-main">
+
+
+                <!-- TITULO -->
+
+                <div class="form-group">
+
+                    <label for="titulo">
+                        TÍTULO DE LA NOTICIA
+                    </label>
+
+                    <input
+                        type="text"
+                        id="titulo"
+                        name="titulo"
+                        class="title-input"
+                        placeholder="Escribí el título de la noticia..."
+                    >
+
+                </div>
+
+
+
+                <!-- INFORMACIÓN -->
+
+                <div class="form-row">
+
+
+                    <div class="form-group">
+
+                        <label for="categoria">
+                            CATEGORÍA
+                        </label>
+
+                        <select
+                            id="categoria"
+                            name="categoria"
+                        >
+
+                            <option value="">
+                                Seleccionar categoría
+                            </option>
+
+                            <option value="noticia">
+                                Noticia
+                            </option>
+
+                            <option value="aviso">
+                                Aviso
+                            </option>
+
+                            <option value="proyecto">
+                                Proyecto
+                            </option>
+
+                            <option value="institucional">
+                                Institucional
+                            </option>
+
+                            <option value="evento">
+                                Evento
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="autor">
+                            AUTOR
+                        </label>
+
+                        <input
+                            type="text"
+                            id="autor"
+                            name="autor"
+                            placeholder="Nombre del autor"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- PORTADA -->
+
+                <div class="form-group">
+
+                    <label>
+                        IMAGEN DE PORTADA
+                    </label>
+
+
+                    <div class="cover-upload">
+
+                        <div class="upload-icon">
+                            +
+                        </div>
+
+                        <strong>
+                            Subir imagen de portada
+                        </strong>
+
+                        <span>
+                            JPG, PNG o WEBP
+                        </span>
+
+                        <input
+                            type="file"
+                            id="portada"
+                            name="portada"
+                            accept="image/png, image/jpeg, image/webp"
+                        >
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- RESUMEN -->
+
+                <div class="form-group">
+
+                    <label for="resumen">
+                        RESUMEN
+                    </label>
+
+                    <textarea
+                        id="resumen"
+                        name="resumen"
+                        class="summary-input"
+                        placeholder="Escribí una breve descripción de la noticia..."
+                    ></textarea>
+
+                    <span class="field-help">
+                        Este texto aparecerá debajo del título
+                        cuando la noticia sea mostrada.
+                    </span>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     EDITOR DE CONTENIDO
+                ================================================== -->
+
+                <div class="form-group">
+
+                    <label>
+                        CONTENIDO DE LA NOTICIA
+                    </label>
+
+
+                    <div class="content-editor">
+
+
+                        <!-- BARRA DEL EDITOR -->
+
+                        <div class="editor-toolbar">
+
+                            <button
+                                type="button"
+                                title="Negrita"
+                            >
+                                <strong>B</strong>
+                            </button>
+
+                            <button
+                                type="button"
+                                title="Cursiva"
+                            >
+                                <em>I</em>
+                            </button>
+
+                            <button
+                                type="button"
+                                title="Subrayado"
+                            >
+                                <u>U</u>
+                            </button>
+
+                            <span class="toolbar-separator"></span>
+
+                            <button
+                                type="button"
+                                title="Título"
+                            >
+                                H
+                            </button>
+
+                            <button
+                                type="button"
+                                title="Subtítulo"
+                            >
+                                H2
+                            </button>
+
+                            <span class="toolbar-separator"></span>
+
+                            <button
+                                type="button"
+                                title="Lista"
+                            >
+                                ☷
+                            </button>
+
+                            <button
+                                type="button"
+                                title="Lista numerada"
+                            >
+                                ≡
+                            </button>
+
+                            <span class="toolbar-separator"></span>
+
+                            <button
+                                type="button"
+                                title="Insertar enlace"
+                            >
+                                🔗
+                            </button>
+
+                            <button
+                                type="button"
+                                title="Insertar imagen"
+                            >
+                                🖼
+                            </button>
+
+                            <span class="toolbar-separator"></span>
+
+                            <button
+                                type="button"
+                                title="Alinear izquierda"
+                            >
+                                ≡
+                            </button>
+
+                            <button
+                                type="button"
+                                title="Centrar"
+                            >
+                                ≡
+                            </button>
+
+                            <button
+                                type="button"
+                                title="Alinear derecha"
+                            >
+                                ≡
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- ÁREA DE ESCRITURA -->
+
+                        <div
+                            class="writing-area"
+                            contenteditable="true"
+                            role="textbox"
+                            aria-label="Contenido de la noticia"
+                        >
+
+                            <p class="editor-placeholder">
+                                Escribí aquí el contenido de la noticia...
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <span class="field-help">
+                        Podés escribir el contenido completo de la noticia
+                        en este espacio.
+                    </span>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     BOTONES
+                ================================================== -->
+
+                <div class="editor-actions">
+
+                    <a
+                        href="noticias.html"
+                        class="button button-cancel"
+                    >
+                        CANCELAR
+                    </a>
+
+                    <button
+                        type="button"
+                        class="button button-draft"
+                    >
+                        GUARDAR BORRADOR
+                    </button>
+
+                    <button
+                        type="submit"
+                        class="button button-publish"
+                    >
+                        PUBLICAR NOTICIA
+                    </button>
+
+                </div>
+
+
+            </section>
+
+
+
+            <!-- =================================================
+                 PANEL LATERAL
+            ================================================== -->
+
+            <aside class="editor-sidebar">
+
+
+                <!-- VISTA PREVIA -->
+
+                <div class="side-box">
+
+                    <div class="side-title">
+
+                        <span>
+                            VISTA PREVIA
+                        </span>
+
+                    </div>
+
+
+                    <div class="preview-card">
+
+
+                        <div class="preview-image">
+
+                            <span>
+                                PORTADA
+                            </span>
+
+                        </div>
+
+
+                        <div class="preview-content">
+
+                            <span class="preview-category">
+                                NOTICIA
+                            </span>
+
+                            <h3>
+                                Título de la noticia
+                            </h3>
+
+                            <p>
+                                Así se verá el resumen
+                                de tu noticia cuando
+                                sea publicada.
+                            </p>
+
+                            <span class="preview-date">
+                                07 OCT 2026
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- CONSEJOS -->
+
+                <div class="tips-box">
+
+                    <span class="tips-label">
+                        RECOMENDACIONES
+                    </span>
+
+                    <h3>
+                        Antes de publicar
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            Utilizá un título claro
+                            y descriptivo.
+                        </li>
+
+                        <li>
+                            Elegí una imagen relacionada
+                            con la noticia.
+                        </li>
+
+                        <li>
+                            Revisá la ortografía antes
+                            de publicar.
+                        </li>
+
+                        <li>
+                            Evitá publicar información
+                            personal de estudiantes.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- ESTADO -->
+
+                <div class="status-box">
+
+                    <span>
+                        ESTADO
+                    </span>
+
+                    <strong>
+                        BORRADOR
+                    </strong>
+
+                </div>
+
+
+            </aside>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+
+            <div class="footer-brand">
+
+                <strong>
+                    ESCUELA DE EDUCACIÓN
+                    TÉCNICA PROFESIONAL
+                </strong>
+
+                <span>
+                    EETP N.º 451
+                </span>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    CONTACTO
+                </h4>
+
+                <p>
+                    Avellaneda, Santa Fe
+                </p>
+
+                <p>
+                    Escuela Técnica de Nivel Secundario
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>
+                    ENLACES
+                </h4>
+
+                <a href="#">
+                    Webmail
+                </a>
+
+                <a href="#">
+                    Moodle
+                </a>
+
+                <a href="#">
+                    Autogestión
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 EETP N.º 451
+            </span>
+
+            <span>
+                Escuela de Educación Técnica Profesional
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="noticias-comun.js"></script>
+    <script src="crear-noticia.js"></script>
+
+</body>
+
+</html>
